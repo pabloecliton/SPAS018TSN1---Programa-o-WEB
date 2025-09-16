@@ -1,0 +1,17 @@
+<h1>Conversor de Temperatura</h1>
+<p>converter de Celsius para Fahrenheit:</p>
+<form>
+    <div class="mb-3">
+        <label for="tempCelsius" class="form-label">Temperatura em Celsius:</label>
+        <input type="number" class="form-control" id="tempCelsius" [(ngModel)]="tempCelsius" name="tempCelsius">
+    </div>
+    <button (click)="converterTemperatura()" class="btn btn-primary">Converter</button>
+    <div class="mt-3">
+        <label for="tempFahrenheit" class="form-label">Temperatura em Fahrenheit:</label>
+        <input type="number" class="form-control" id="tempFahrenheit" [value]="tempFahrenheit" readonly>
+    </div>
+       <div class="mt-3">
+        <label for="tempKelvin" class="form-label">Temperatura em Kelvin:</label>
+        <input type="number" class="form-control" id="tempKelvin" [value]="tempKelvin" readonly>
+    </div>
+</form>

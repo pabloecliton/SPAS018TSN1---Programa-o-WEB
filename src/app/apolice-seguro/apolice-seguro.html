@@ -1,0 +1,27 @@
+<h1>Cálculo de Apolice de Seguro</h1>
+<p>Calcular o valor da apolice de seguro:</p>
+<form>
+    <div class="mb-3">
+        <label for="NomeSegurado" class="form-label">Nome do Segurado:</label>
+        <input type="text" class="form-control" id="nomesegurado" name="nomesegurado">
+    </div>
+    <div class="mb-3">
+        <label for="IdadeCondutor" class="form-label">Idade do Condutor:</label>
+        <input type="number" class="form-control" id="idadecondutor" [(ngModel)]="idadecondutor" name="idadecondutor">
+    </div>
+    <div class="mb-3">
+        <label for="SexoCondutor" class="form-label">Sexo:</label>
+        <select class="form-select" id="sexocondutor" [(ngModel)]="sexocondutor" name="sexocondutor">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="ValorAutomovel" class="form-label">Valor do automóvel:</label>
+        <input type="number" class="form-control" id="valorveiculo" [(ngModel)]="valorveiculo" name="valorveiculo">
+    </div>
+    <button (click)="resultadoApolice()" class="btn btn-primary">Resultado da Apolice</button>
+    <div class="mt-3">
+        <label for="valorSeguro" class="form-label">Valor da Apolice será de R$:</label>
+        <input type="number" class="form-control" id="valorSeguro" [value]="valorSeguro" readonly>
+    </div>

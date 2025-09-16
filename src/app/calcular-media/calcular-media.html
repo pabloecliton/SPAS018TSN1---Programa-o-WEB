@@ -1,0 +1,28 @@
+<h1>Calcular Média</h1>
+<p>Insira as notas dos alunos para calcular a média:</p>
+<form>
+    <div class="mb-3">
+        <label for="nota1" class="form-label">Nota AC1:</label>
+        <input type="number" class="form-control" id="notac1" [(ngModel)]="notac1" name="notac1">
+    </div>
+    <div class="mb-3">
+        <label for="nota2" class="form-label">Nota AC2:</label>
+        <input type="number" class="form-control" id="notac2" [(ngModel)]="notac2" name="notac2">
+    </div>
+    <div class="mb-3">
+        <label for="nota2" class="form-label">Nota AG:</label>
+        <input type="number" class="form-control" id="notaag" [(ngModel)]="notaag" name="notaag">
+    </div>
+    <div class="mb-3">
+        <label for="nota2" class="form-label">Nota AF:</label>
+        <input type="number" class="form-control" id="notaaf" [(ngModel)]="notaaf" name="notaaf">
+    </div>
+    <button (click)="calcularMedia()" class="btn btn-primary">Calcular Média</button>
+    <div class="mt-3">
+        <label for="media" class="form-label">Média Final:</label>
+        <input type="number" class="form-control" id="media" [value]="media" readonly>
+    </div>
+     <div class="mt-3">
+            <p>{{ resultado }}</p>
+        </div>
+</form>
