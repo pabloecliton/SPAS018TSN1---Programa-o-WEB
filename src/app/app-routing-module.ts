@@ -8,6 +8,7 @@ import { PaginaNaoEncontrada } from './pagina-nao-encontrada/pagina-nao-encontra
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'calcular-media', pathMatch: 'full' },
   { path: 'calcular-media', component: CalcularMedia },
   { path: 'apolice-seguro', component: ApoliceSeguro },
   { path: 'conversor-temperatura', component: ConversorTemperatura },
