@@ -20,7 +20,7 @@ export class ApoliceSeguro {
       this.valorSeguro = this.valorveiculo * 0.15;
     }
     else if ((this.idadecondutor > 25) && (this.sexocondutor === 'Masculino')) {
-      this.valorSeguro = this.valorveiculo * 0.12;
+      this.valorSeguro = this.valorveiculo * 0.10;
     }
     else {
       this.valorSeguro = this.valorveiculo * 0.08;
